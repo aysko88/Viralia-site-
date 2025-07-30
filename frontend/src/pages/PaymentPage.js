@@ -61,19 +61,21 @@ const PaymentPage = () => {
 
   useEffect(() => {
     if (location.state?.selectedPack) {
-      setSelectedPack(location.state.selectedPack);
+      const pack = location.state.selectedPack;
+      setSelectedPack(pack);
       setFormData(prev => ({
         ...prev,
-        pack: location.state.selectedPack.name,
-        amount: location.state.selectedPack.price
+        pack: pack.name,
+        amount: pack.price
       }));
     } else {
       // Pack Viral par défaut (le plus populaire)
-      setSelectedPack(defaultPacks[1]);
+      const defaultPack = defaultPacks[1];
+      setSelectedPack(defaultPack);
       setFormData(prev => ({
         ...prev,
-        pack: defaultPacks[1].name,
-        amount: defaultPacks[1].price
+        pack: defaultPack.name,
+        amount: defaultPack.price
       }));
     }
   }, [location.state]);
