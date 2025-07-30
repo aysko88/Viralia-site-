@@ -26,13 +26,21 @@ app.add_middleware(
 
 # Configuration MongoDB
 MONGO_URL = os.getenv("MONGO_URL", "mongodb://localhost:27017/viralia")
-client = pymongo.MongoClient(MONGO_URL)
-db = client.viralia
-
-# Collections
-reviews_collection = db.reviews
-contacts_collection = db.contacts
-payments_collection = db.payments
+try:
+    client = pymongo.MongoClient(MONGO_URL, serverSelectionTimeoutMS=5000)
+    client.server_info()  # Test connection
+    db = client.viralia
+    # Collections
+    reviews_collection = db.reviews
+    contacts_collection = db.contacts
+    payments_collection = db.payments
+    print("MongoDB connected successfully")
+except Exception as e:
+    print(f"MongoDB connection failed: {e}")
+    # Fallback to in-memory storage for demo
+    reviews_collection = None
+    contacts_collection = None
+    payments_collection = None
 
 # Modèles Pydantic
 class Review(BaseModel):
