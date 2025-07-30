@@ -366,7 +366,20 @@ const PacksPage = () => {
                 <div className="mt-6">
                   <Link
                     to="/payment"
-                    state={{ selectedPack }}
+                    state={{ 
+                      selectedPack: {
+                        id: selectedPack.id,
+                        name: selectedPack.name,
+                        price: selectedPack.price,
+                        description: selectedPack.description,
+                        features: selectedPack.features,
+                        popular: selectedPack.popular,
+                        badge: selectedPack.badge,
+                        duration: selectedPack.duration,
+                        support: selectedPack.support,
+                        guarantee: selectedPack.guarantee
+                      }
+                    }}
                     className="btn-primary w-full flex items-center justify-center space-x-2"
                   >
                     <span>Choisir ce pack</span>
