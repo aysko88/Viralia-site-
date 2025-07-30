@@ -1,0 +1,15 @@
+{
+  "name": "viralia",
+  "version": "1.0.0",
+  "description": "ViralIA - L'IA qui rend TikTok rentable",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "server": "cd backend && python server.py",
+    "install-deps": "cd frontend && npm install && cd ../backend && pip install -r requirements.txt"
+  },
+  "keywords": ["tiktok", "ai", "formation", "viral"],
+  "author": "ViralIA",
+  "license": "ISC"
+}
