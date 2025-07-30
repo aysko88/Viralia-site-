@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViralIA - L'IA qui rend TikTok rentable</title>
+    <meta name="description" content="ViralIA - L'IA qui rend TikTok rentable. 3 Packs Concrets. Résultats Réels. TikTok x Intelligence Artificielle">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+        }
+        
+        .hero-title {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #c084fc, #38bdf8);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .glass-card {
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(168, 85, 247, 0.2);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #9333ea, #0284c7);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(168, 85, 247, 0.3);
+        }
+        
+        .floating-sphere {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+        
+        .testimonial-card {
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(168, 85, 247, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(168, 85, 247, 0.2);
+            border-color: rgba(168, 85, 247, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-white">
+    
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-slate-900/95 backdrop-blur-md border-b border-purple-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-bolt text-white"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold hero-title">ViralIA</h1>
+                        <p class="text-xs text-gray-400 -mt-1">L'IA qui rend TikTok rentable</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#accueil" class="text-gray-300 hover:text-purple-400 transition-colors">Accueil</a>
+                    <a href="#packs" class="text-gray-300 hover:text-purple-400 transition-colors">Packs</a>
+                    <a href="#avis" class="text-gray-300 hover:text-purple-400 transition-colors">Avis</a>
+                    <a href="#dashboards" class="text-gray-300 hover:text-purple-400 transition-colors">Dashboards</a>
+                    <a href="#contact" class="text-gray-300 hover:text-purple-400 transition-colors">Contact</a>
+                </div>
+                
+                <a href="#packs" class="btn-primary text-white px-6 py-2 rounded-full font-semibold hover:scale-105">
+                    Découvrir les Packs
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+        <!-- Sphère 3D flottante -->
+        <div class="absolute right-10 top-1/2 transform -translate-y-1/2 hidden lg:block">
+            <div class="floating-sphere w-80 h-80 rounded-full bg-gradient-to-br from-purple-500/20 to-blue-500/20 border border-purple-400/30 relative">
+                <div class="absolute inset-0 rounded-full bg-gradient-radial from-purple-500/10 to-transparent animate-pulse"></div>
+                <div class="absolute inset-8 rounded-full border border-purple-400/20 animate-spin" style="animation-duration: 8s;"></div>
+                <div class="absolute inset-16 rounded-full border border-blue-400/20 animate-spin" style="animation-duration: 12s; animation-direction: reverse;"></div>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 text-center lg:text-left">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="inline-flex items-center space-x-2 bg-purple-500/20 border border-purple-500/30 rounded-full px-4 py-2 text-sm">
+                        <i class="fas fa-bolt text-purple-400"></i>
+                        <span class="text-purple-300">Nouveau : Formation IA 2024</span>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                        Percer sur <span class="hero-title">TikTok</span><br>
+                        grâce à l'<span class="hero-title">IA</span>
+                    </h1>
+                    
+                    <p class="text-xl md:text-2xl text-gray-300 max-w-2xl">
+                        3 Packs Concrets. Résultats Réels.<br>
+                        <span class="hero-title font-semibold">TikTok × Intelligence Artificielle</span>
+                    </p>
+                    
+                    <div class="grid grid-cols-3 gap-4 max-w-md">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold hero-title">50K+</div>
+                            <div class="text-sm text-gray-400">Followers générés</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold hero-title">2M+</div>
+                            <div class="text-sm text-gray-400">Vues obtenues</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold hero-title">97%</div>
+                            <div class="text-sm text-gray-400">Taux de réussite</div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#packs" class="btn-primary text-white px-8 py-4 rounded-full font-semibold inline-flex items-center justify-center space-x-2">
+                            <i class="fas fa-star"></i>
+                            <span>Découvrir les Packs</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        
+                        <button class="bg-transparent border-2 border-purple-500 text-purple-400 px-8 py-4 rounded-full font-semibold hover:bg-purple-500 hover:text-white transition-all">
+                            <i class="fas fa-play mr-2"></i>
+                            Voir la Démo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packs Section -->
+    <section id="packs" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center space-x-2 bg-purple-500/20 border border-purple-500/30 rounded-full px-4 py-2 text-sm mb-6">
+                    <i class="fas fa-star text-purple-400"></i>
+                    <span class="text-purple-300">Nos Formations</span>
+                </div>
+                
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    Choisissez votre <span class="hero-title">Pack IA</span>
+                </h2>
+                
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Des formations concrètes adaptées à votre niveau. 
+                    Chaque pack contient des stratégies éprouvées pour exploser sur TikTok.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Pack Starter -->
+                <div class="glass-card rounded-2xl p-8 hover:scale-105 transition-all">
+                    <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center mb-6">
+                        <i class="fas fa-bolt text-2xl text-white"></i>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-white mb-2">Pack Starter</h3>
+                    <p class="text-gray-300 mb-4">Parfait pour débuter sur TikTok avec l'IA</p>
+                    
+                    <div class="flex items-baseline space-x-2 mb-6">
+                        <span class="text-4xl font-bold hero-title">97€</span>
+                        <span class="text-gray-400 line-through">197€</span>
+                    </div>
+                    
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span class="text-gray-300 text-sm">Bases de TikTok et algorithme</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span class="text-gray-300 text-sm">Introduction à l'IA pour le contenu</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span class="text-gray-300 text-sm">Outils gratuits recommandés</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span class="text-gray-300 text-sm">Guide de création de contenu</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span class="text-gray-300 text-sm">Support communautaire</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn-primary w-full text-white py-3 rounded-full font-semibold text-center block">
+                        Choisir ce pack
+                    </a>
+                </div>
+                
+                <!-- Pack Viral -->
+                <div class="glass-card rounded-2xl p-8 hover:scale-105 transition-all relative border-purple-500/50 bg-gradient-to-br from-purple-500/10 to-blue-500/10">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <div class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-1 rounded-full text-sm font-medium">
+                            Plus Populaire
+                        </div>
+                    </div>
+                    
+                    <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-2xl text-white"></i>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-white mb-2">Pack Viral</h3>
+                    <p class="text-gray-300 mb-4">Stratégies concrètes pour devenir viral</p>
+                    
+                    <div class="flex items-baseline space-x-2 mb-6">
+                        <span class="text-4xl font-bold hero-title">197€</span>
+                        <span class="text-gray-400 line-through">397€</span>
+                    </div>
+                    
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span class="text-gray-300 text-sm">Automatisation IA avancée</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span class="text-gray-300 text-sm">Stratégies de contenu viral</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span class="text-gray-300 text-sm">Outils premium inclus</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span class="text-gray-300 text-sm">Analyse de performance</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span class="text-gray-300 text-sm">Templates prêts à l'emploi</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span class="text-gray-300 text-sm">Support prioritaire</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn-primary w-full text-white py-3 rounded-full font-semibold text-center block">
+                        Choisir ce pack
+                    </a>
+                </div>
+                
+                <!-- Pack Pro -->
+                <div class="glass-card rounded-2xl p-8 hover:scale-105 transition-all">
+                    <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center mb-6">
+                        <i class="fas fa-crown text-2xl text-white"></i>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-white mb-2">Pack Pro + Dashboards</h3>
+                    <p class="text-gray-300 mb-4">Solution complète avec automatisation</p>
+                    
+                    <div class="flex items-baseline space-x-2 mb-6">
+                        <span class="text-4xl font-bold hero-title">397€</span>
+                        <span class="text-gray-400 line-through">597€</span>
+                    </div>
+                    
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span class="text-gray-300 text-sm">Tunnels de vente automatisés</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span class="text-gray-300 text-sm">Dashboards de performance</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span class="text-gray-300 text-sm">Automatisation complète</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span class="text-gray-300 text-sm">Coaching personnalisé</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span class="text-gray-300 text-sm">Accès aux outils premium</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span class="text-gray-300 text-sm">Résultats garantis</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span class="text-gray-300 text-sm">Support 24/7</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn-primary w-full text-white py-3 rounded-full font-semibold text-center block">
+                        Choisir ce pack
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages -->
+    <section id="avis" class="py-20 px-4 bg-slate-800/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center space-x-2 bg-purple-500/20 border border-purple-500/30 rounded-full px-4 py-2 text-sm mb-6">
+                    <i class="fas fa-star text-purple-400"></i>
+                    <span class="text-purple-300">Témoignages</span>
+                </div>
+                
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    Ils ont explosé grâce à <span class="hero-title">ViralIA</span>
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Témoignage 1 -->
+                <div class="testimonial-card rounded-xl p-6">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b09bd8c8?w=60&h=60&fit=crop&crop=face" alt="Marie L." class="w-12 h-12 rounded-full">
+                        <div class="flex-1">
+                            <div class="flex items-center space-x-2">
+                                <h4 class="font-semibold text-white">Marie L.</h4>
+                                <div class="w-4 h-4 bg-green-400 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-xs text-white"></i>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-1 mt-1">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">"Pack Viral incroyable ! J'ai gagné 50K followers en 3 semaines 🚀"</p>
+                    <div class="inline-flex items-center bg-gradient-to-r from-purple-500 to-pink-500 rounded-full px-3 py-1 text-xs text-white">
+                        Pack Viral
+                    </div>
+                </div>
+                
+                <!-- Témoignage 2 -->
+                <div class="testimonial-card rounded-xl p-6">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" alt="Thomas K." class="w-12 h-12 rounded-full">
+                        <div class="flex-1">
+                            <div class="flex items-center space-x-2">
+                                <h4 class="font-semibold text-white">Thomas K.</h4>
+                                <div class="w-4 h-4 bg-green-400 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-xs text-white"></i>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-1 mt-1">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">"L'IA a transformé mon contenu. Mes vues ont explosé ! 💯"</p>
+                    <div class="inline-flex items-center bg-gradient-to-r from-purple-600 to-blue-600 rounded-full px-3 py-1 text-xs text-white">
+                        Pack Pro
+                    </div>
+                </div>
+                
+                <!-- Témoignage 3 -->
+                <div class="testimonial-card rounded-xl p-6">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face" alt="Sarah M." class="w-12 h-12 rounded-full">
+                        <div class="flex-1">
+                            <div class="flex items-center space-x-2">
+                                <h4 class="font-semibold text-white">Sarah M.</h4>
+                                <div class="w-4 h-4 bg-green-400 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-xs text-white"></i>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-1 mt-1">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4">"Pack Starter parfait pour débuter. Très bien expliqué !"</p>
+                    <div class="inline-flex items-center bg-gradient-to-r from-blue-500 to-purple-500 rounded-full px-3 py-1 text-xs text-white">
+                        Pack Starter
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboards -->
+    <section id="dashboards" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center space-x-2 bg-purple-500/20 border border-purple-500/30 rounded-full px-4 py-2 text-sm mb-6">
+                    <i class="fas fa-chart-bar text-purple-400"></i>
+                    <span class="text-purple-300">Résultats Réels</span>
+                </div>
+                
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    Dashboards de <span class="hero-title">Performance</span>
+                </h2>
+                
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Découvrez les résultats concrets de nos étudiants avec des dashboards en temps réel. 
+                    Des données transparentes, des résultats mesurables.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <div class="glass-card rounded-xl p-6 text-center">
+                    <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center">
+                        <i class="fas fa-users text-white"></i>
+                    </div>
+                    <div class="text-2xl font-bold hero-title mb-1">2.5M+</div>
+                    <div class="text-sm text-gray-400 mb-2">Total Followers Générés</div>
+                    <div class="text-xs text-green-400 font-medium">+147% ce mois</div>
+                </div>
+                
+                <div class="glass-card rounded-xl p-6 text-center">
+                    <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                        <i class="fas fa-eye text-white"></i>
+                    </div>
+                    <div class="text-2xl font-bold hero-title mb-1">50M+</div>
+                    <div class="text-sm text-gray-400 mb-2">Vues Totales</div>
+                    <div class="text-xs text-green-400 font-medium">+289% ce mois</div>
+                </div>
+                
+                <div class="glass-card rounded-xl p-6 text-center">
+                    <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-br from-pink-500 to-purple-500 flex items-center justify-center">
+                        <i class="fas fa-heart text-white"></i>
+                    </div>
+                    <div class="text-2xl font-bold hero-title mb-1">8.2M+</div>
+                    <div class="text-sm text-gray-400 mb-2">Likes Obtenus</div>
+                    <div class="text-xs text-green-400 font-medium">+312% ce mois</div>
+                </div>
+                
+                <div class="glass-card rounded-xl p-6 text-center">
+                    <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-br from-green-500 to-blue-500 flex items-center justify-center">
+                        <i class="fas fa-euro-sign text-white"></i>
+                    </div>
+                    <div class="text-2xl font-bold hero-title mb-1">125K€+</div>
+                    <div class="text-sm text-gray-400 mb-2">Revenus Générés</div>
+                    <div class="text-xs text-green-400 font-medium">+∞ ce mois</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Paiement -->
+    <section id="contact" class="py-20 px-4 bg-slate-800/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    Commandez votre <span class="hero-title">Formation</span>
+                </h2>
+                <p class="text-xl text-gray-300">
+                    Paiement par virement bancaire uniquement. Accès immédiat après confirmation.
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Coordonnées RIB -->
+                <div class="glass-card rounded-2xl p-8">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <i class="fas fa-shield-alt text-green-400"></i>
+                        <h3 class="text-xl font-bold text-white">Coordonnées Bancaires</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-slate-800/50 p-4 rounded-lg">
+                            <div class="text-sm text-gray-400">Bénéficiaire</div>
+                            <div class="font-medium text-white">ViralIA SARL</div>
+                        </div>
+                        
+                        <div class="bg-slate-800/50 p-4 rounded-lg">
+                            <div class="text-sm text-gray-400">IBAN</div>
+                            <div class="font-medium text-white font-mono">FR76 1234 5678 9012 3456 7890 123</div>
+                        </div>
+                        
+                        <div class="bg-slate-800/50 p-4 rounded-lg">
+                            <div class="text-sm text-gray-400">BIC</div>
+                            <div class="font-medium text-white font-mono">AGRIFRPP</div>
+                        </div>
+                        
+                        <div class="bg-purple-500/20 border border-purple-500/30 rounded-lg p-4">
+                            <div class="flex items-start space-x-2">
+                                <i class="fas fa-info-circle text-purple-400 mt-1"></i>
+                                <div class="text-sm">
+                                    <div class="text-white font-medium mb-1">Référence à indiquer :</div>
+                                    <div class="text-purple-300 font-mono">VIRALIA-VOTRENOM1234</div>
+                                    <div class="text-gray-400 mt-1">
+                                        Cette référence nous permettra d'identifier votre paiement.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formulaire Contact -->
+                <div class="glass-card rounded-2xl p-8">
+                    <h3 class="text-xl font-bold text-white mb-6">Informations de Contact</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-purple-400"></i>
+                            <div>
+                                <div class="text-white font-medium">Email</div>
+                                <div class="text-purple-400">contact@viralia.fr</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-purple-400"></i>
+                            <div>
+                                <div class="text-white font-medium">Téléphone</div>
+                                <div class="text-purple-400">+33 1 23 45 67 89</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-3">
+                            <i class="fab fa-tiktok text-purple-400"></i>
+                            <div>
+                                <div class="text-white font-medium">TikTok</div>
+                                <div class="text-purple-400">@viralia_official</div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-blue-500/20 border border-blue-500/30 rounded-lg p-4">
+                            <h4 class="font-semibold text-white mb-2">Instructions :</h4>
+                            <ul class="text-sm text-gray-300 space-y-1">
+                                <li>1. Effectuez le virement avec les coordonnées ci-dessus</li>
+                                <li>2. Indiquez la référence dans le motif du virement</li>
+                                <li>3. Envoyez-nous la preuve par email</li>
+                                <li>4. Recevez vos accès sous 24h</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-purple-500/20 py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-2 mb-4">
+                    <div class="w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-bolt text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold hero-title">ViralIA</h3>
+                        <p class="text-xs text-gray-400">L'IA qui rend TikTok rentable</p>
+                    </div>
+                </div>
+                
+                <p class="text-gray-400 mb-6">
+                    Transformez votre présence TikTok grâce à l'intelligence artificielle. 
+                    Des stratégies concrètes pour devenir viral et monétiser votre audience.
+                </p>
+                
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
+                        <i class="fab fa-tiktok text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                </div>
+                
+                <div class="border-t border-purple-500/20 pt-8">
+                    <p class="text-gray-400 text-sm">
+                        © 2024 ViralIA. Tous droits réservés.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth scrolling script -->
+    <script>
+        // Smooth scrolling pour les liens d'ancrage
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
