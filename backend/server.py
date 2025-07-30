@@ -76,10 +76,18 @@ app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
 async def root():
     return {"message": "ViralIA API - L'IA qui rend TikTok rentable"}
 
+# Données en mémoire pour la démo (remplace MongoDB si indisponible)
+demo_reviews = []
+demo_contacts = []
+demo_payments = []
+
 # Routes pour les avis clients
 @app.get("/api/reviews", response_model=List[Review])
 async def get_reviews():
-    reviews = list(reviews_collection.find({}, {"_id": 0}))
+    if reviews_collection:
+        reviews = list(reviews_collection.find({}, {"_id": 0}))
+    else:
+        reviews = demo_reviews
     return reviews
 
 @app.post("/api/reviews", response_model=Review)
@@ -87,7 +95,12 @@ async def create_review(review: Review):
     review.id = str(uuid.uuid4())
     review.created_at = datetime.now()
     review_dict = review.dict()
-    reviews_collection.insert_one(review_dict)
+    
+    if reviews_collection:
+        reviews_collection.insert_one(review_dict)
+    else:
+        demo_reviews.append(review_dict)
+    
     return review
 
 # Routes pour les contacts
@@ -96,12 +109,20 @@ async def create_contact(contact: Contact):
     contact.id = str(uuid.uuid4())
     contact.created_at = datetime.now()
     contact_dict = contact.dict()
-    contacts_collection.insert_one(contact_dict)
+    
+    if contacts_collection:
+        contacts_collection.insert_one(contact_dict)
+    else:
+        demo_contacts.append(contact_dict)
+    
     return {"message": "Message envoyé avec succès!", "id": contact.id}
 
 @app.get("/api/contacts")
 async def get_contacts():
-    contacts = list(contacts_collection.find({}, {"_id": 0}))
+    if contacts_collection:
+        contacts = list(contacts_collection.find({}, {"_id": 0}))
+    else:
+        contacts = demo_contacts
     return contacts
 
 # Routes pour les paiements
