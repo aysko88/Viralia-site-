@@ -36,13 +36,13 @@ const Footer = () => {
               Des stratégies concrètes pour devenir viral et monétiser votre audience.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
+              <a href="https://twitter.com/viralia" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
+              <a href="https://instagram.com/viralia" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
+              <a href="https://youtube.com/viralia" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400 transition-colors">
                 <Youtube className="w-5 h-5" />
               </a>
             </div>
