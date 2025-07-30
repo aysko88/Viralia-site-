@@ -26,10 +26,12 @@ app.add_middleware(
 
 # Configuration MongoDB
 MONGO_URL = os.getenv("MONGO_URL", "mongodb://localhost:27017/viralia")
+DB_NAME = os.getenv("DB_NAME", "viralia")
+
 try:
     client = pymongo.MongoClient(MONGO_URL, serverSelectionTimeoutMS=5000)
     client.server_info()  # Test connection
-    db = client.viralia
+    db = client[DB_NAME]
     # Collections
     reviews_collection = db.reviews
     contacts_collection = db.contacts
