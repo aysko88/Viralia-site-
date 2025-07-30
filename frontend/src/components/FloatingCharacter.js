@@ -52,7 +52,7 @@ const FloatingCharacter = () => {
       clearInterval(iconInterval);
       clearTimeout(window.scrollTimer);
     };
-  }, []);
+  }, [icons.length]);
 
   const handleClick = () => {
     setIsHovered(true);
