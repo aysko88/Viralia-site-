@@ -139,15 +139,15 @@ const Footer = () => {
               © {currentYear} ViralIA. Tous droits réservés.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors text-sm">
+              <Link to="/terms" className="text-gray-400 hover:text-purple-400 transition-colors text-sm">
                 Conditions d'utilisation
-              </a>
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors text-sm">
+              </Link>
+              <Link to="/privacy" className="text-gray-400 hover:text-purple-400 transition-colors text-sm">
                 Politique de confidentialité
-              </a>
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors text-sm">
+              </Link>
+              <Link to="/legal" className="text-gray-400 hover:text-purple-400 transition-colors text-sm">
                 Mentions légales
-              </a>
+              </Link>
             </div>
           </div>
         </div>
