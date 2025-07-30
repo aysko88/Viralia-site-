@@ -281,7 +281,20 @@ const PacksPage = () => {
                   {/* CTA Button */}
                   <Link
                     to="/payment"
-                    state={{ selectedPack: pack }}
+                    state={{ 
+                      selectedPack: {
+                        id: pack.id,
+                        name: pack.name,
+                        price: pack.price,
+                        description: pack.description,
+                        features: pack.features,
+                        popular: pack.popular,
+                        badge: pack.badge,
+                        duration: pack.duration,
+                        support: pack.support,
+                        guarantee: pack.guarantee
+                      }
+                    }}
                     className={`w-full btn-primary flex items-center justify-center space-x-2 ${
                       pack.popular ? 'bg-gradient-to-r from-purple-600 to-pink-600' : ''
                     }`}
