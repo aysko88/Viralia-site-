@@ -226,8 +226,10 @@ async def get_packs():
 @app.on_event("startup")
 async def startup_event():
     # Vérifier si des avis existent déjà
-    if reviews_collection.count_documents({}) == 0:
-        demo_reviews = [
+    existing_reviews = demo_reviews if not reviews_collection else list(reviews_collection.find().limit(1))
+    
+    if not existing_reviews:
+        demo_reviews_data = [
             {
                 "id": str(uuid.uuid4()),
                 "name": "Marie L.",
@@ -283,7 +285,11 @@ async def startup_event():
                 "created_at": datetime.now()
             }
         ]
-        reviews_collection.insert_many(demo_reviews)
+        
+        if reviews_collection:
+            reviews_collection.insert_many(demo_reviews_data)
+        else:
+            demo_reviews.extend(demo_reviews_data)
 
 if __name__ == "__main__":
     import uvicorn
