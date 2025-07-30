@@ -144,7 +144,7 @@ async def upload_payment_proof(
         content = await file.read()
         await f.write(content)
     
-    # Enregistrer en base
+    # Enregistrer en base ou en mémoire
     payment = {
         "id": str(uuid.uuid4()),
         "name": name,
@@ -155,13 +155,19 @@ async def upload_payment_proof(
         "created_at": datetime.now()
     }
     
-    payments_collection.insert_one(payment)
+    if payments_collection:
+        payments_collection.insert_one(payment)
+    else:
+        demo_payments.append(payment)
     
     return {"message": "Preuve de paiement envoyée avec succès!", "id": payment["id"]}
 
 @app.get("/api/payments")
 async def get_payments():
-    payments = list(payments_collection.find({}, {"_id": 0}))
+    if payments_collection:
+        payments = list(payments_collection.find({}, {"_id": 0}))
+    else:
+        payments = demo_payments
     return payments
 
 # Route pour les informations des packs
